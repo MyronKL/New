@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.Title {
+display: flex;
+justify-content: space-between;
+padding: 20px 30px;
+font-size: 35px;
+font-family: 'IBM Plex Serif', serif;
+position: fixed;
+top: 0;
+width: 100%;
+z-index: 999999;
+background-color: #D69F7E;
+}
+
+.Title .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+.Title .navbar:hover {
+    background-color: white;
+    cursor: pointer;
+    
+}
+
+.Title .icon:hover {
+    background-color: white;
+    cursor: pointer;
+}
+
+.Title .icon.hide-btn {
+    cursor: default;
+    pointer-events: none;
+    opacity: 0.3;
+}
+
+body {
+    background-color: #774936;
+}
+.content {
+    display: flex;
+    width: 80%;
+}
+.content1 {
+    width: 50%;
+    display: block;
+}
+.content1 p.show {
+    opacity: 1 !important;
+}
+.content1 p{
+    opacity: 0;
+    transition: all 1s ease;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 20px;
+    font-family: 'Lato', sans-serif;
+}
+
+.show {
+ display: block !important;
+}
+
+.Main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.img {
+    position: absolute;
+    /* z-index: 1; */
+    border-radius: 5%;
+    width: 30%;
+    height: 80%;
+    margin-top: 80px;
+    margin-right: 70px;
+    background-position: center;
+    background-size: 105%;
+    background-image: url("https://cdn.shopify.com/s/files/1/0627/0042/1341/products/Queen_Victoria_1843-min_525x700.jpg?v=1650299356");
+    transition: all 2s ease;
+}
+
+.img.right {
+    transform: translateX(400px);
+    
+}
+
+.img.left {
+    transform: translateX(-400px);   
+}
+a {
+    margin-left: 650px;
+    display: flex;
+    position: absolute;
+    margin-top: 170px;
+    font-size: 30px;
+    font-family: 'Gloock', serif;
+    text-decoration: none;
+    color: whitesmoke;
+    opacity: 0;
+    }
+    
+    a:hover {
+        background-color: #dbd0be;
+        color: black;
+    }
+.albert1.hide {
+    opacity: 0;
+}
+.albert1.show {
+    opacity: 1;
+}
+
